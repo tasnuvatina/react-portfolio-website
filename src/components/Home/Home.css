@@ -1,0 +1,14 @@
+
+.home-main{
+    background-color: #f6f5f5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.welcome{
+    width: 100%;
+    align-self: center;
+    padding: 0px 50px;
+    
+}

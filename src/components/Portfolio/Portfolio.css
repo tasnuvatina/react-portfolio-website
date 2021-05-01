@@ -1,0 +1,22 @@
+.portfolio-main{
+    background-color: #f6f5f5;
+    display: grid;
+    height: 100vh;
+    overflow: scroll;
+}
+
+/********************* portfolio header ***************/
+.portfolio-header{
+    background-color: #1687a7;
+    height: 150px;
+    padding-top: 30px;
+    color: #f6f5f5;
+}
+/****************port folio all ************************/
+.portfolio-all{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-top: 30px;
+}
+

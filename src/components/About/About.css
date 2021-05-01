@@ -1,0 +1,30 @@
+.about-main{
+    background-color: #276678;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.about-info {
+    align-self: center;
+    padding: 0px 30px 0px 50px;
+}
+
+/**************  skill section  ***********************/
+
+.skill-icon{
+    height: 25px;
+}
+
+.skill-span-div>span{
+    border: 1px solid red;
+    display: inline-block;
+    align-content: center;
+    padding: 3px 5px;
+    margin: 5px;
+}
+
+.single-skill{
+    display: flex;
+    align-items: center;
+}

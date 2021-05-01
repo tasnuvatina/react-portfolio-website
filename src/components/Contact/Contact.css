@@ -1,0 +1,18 @@
+.contact-main {
+    background-color: #f6f5f5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.contact-info {
+
+    align-self: center;
+    padding: 0px 50px;
+
+}
+
+.sendmail-main{
+    align-self: center;
+    padding: 0px 30px 0px 50px;
+}

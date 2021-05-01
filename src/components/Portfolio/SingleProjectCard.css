@@ -1,0 +1,31 @@
+/*********** single postfolio card ***********************/
+
+.single-portfolio-card{
+    background-color: #276678;
+    border-radius: 15px;
+    padding:15px 15px 0px 15px;
+    width: 350px;
+    margin-bottom: 30px;
+}
+.portfolio-pic{
+    border-radius: 15px;
+    width: 100%;
+    height: 260.469px;
+}
+.project-info{
+    color: #f6f5f5;
+    margin-top: 10px;
+}
+
+.portfolio-links-para{
+    text-align: center;
+    font-size: 30px;
+}
+
+.portfolio-link-span{
+    padding: 5px;
+    margin: 0px 5px;
+}
+.portfolio-link{
+    color: #f6f5f5;
+}
