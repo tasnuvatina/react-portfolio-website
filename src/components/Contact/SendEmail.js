@@ -24,8 +24,8 @@ const SendEmail = () => {
   };
   return (
     <div className="">
-    <h2>Contact Form</h2>
-      <form onSubmit={sendEmail}>
+    <h3 className="poppins-font h3-headers">Contact Form</h3>
+      <form onSubmit={sendEmail} className='work-sans-font'>
         <div>
           <input className="form-control w-80 my-3" type="text" name="name" placeholder="name" />
         </div>

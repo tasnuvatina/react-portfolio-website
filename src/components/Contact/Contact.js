@@ -7,14 +7,14 @@ const Contact = () => {
     <div className="component-main">
       <div className="contact-main">
         <div className="contact-info">
-          <h2>Contact</h2>
-          <h3>Where to find me</h3>
-          <p>
+          <h2 className="poppins-font h2-headers">Contact</h2>
+          <h3  className="poppins-font">Where to find me</h3>
+          <p className="work-sans-font all-p">
             Do you have an interesting project I can help with? Feel free to
             reach out to me by using one of the following:
           </p>
 
-          <ul>
+          <ul className="work-sans-font">
             <li>
               Email:{" "}
               <a href="mailto:tasnuvarahman1996@gmail.com" rel="norefferer">
@@ -42,7 +42,7 @@ const Contact = () => {
               </a>
             </li>
           </ul>
-          <p>You can also use the contact form on this page.</p>
+          <p className="work-sans-font all-p">You can also use the contact form on this page.</p>
         </div>
         <div className="contact-info">
       <SendEmail></SendEmail>

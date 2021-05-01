@@ -3,3 +3,22 @@
   margin-left: 11rem;
   /* margin-top: -25px; */
 }
+
+.poppins-font{
+  font-family: 'Poppins', sans-serif;
+}
+.work-sans-font {
+  font-family: 'Work Sans', sans-serif;
+}
+.h2-headers{
+  font-size: 55px;
+  font-weight: 700;
+}
+.h3-headers{
+  font-size: 35px;
+  font-weight: 600;
+}
+.all-p{
+  font-size: 16px;
+  font-weight: 300;
+}

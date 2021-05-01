@@ -14,8 +14,8 @@ const SingleProjectCard = (props) => {
         <img className="portfolio-pic" src={project.pic} alt="" />
       </div>
       <div className="project-info">
-        <h4>{project.name}</h4>
-        <p>
+        <h4 className="poppins-font">{project.name}</h4>
+        <p className="work-sans-font all-p">
           {project.description}
         </p>
         <p className="portfolio-links-para">

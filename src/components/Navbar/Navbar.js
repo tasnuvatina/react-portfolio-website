@@ -17,7 +17,7 @@ const Navbar = () => {
         </div>
         <div>
           <nav className="nav-main">
-            <ul className="nav-ul">
+            <ul className="nav-ul work-sans-font">
               <li className="nav-list">
                 <NavLink className="nav-link" to="/about">About</NavLink>
               </li>

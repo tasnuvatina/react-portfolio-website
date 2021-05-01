@@ -12,3 +12,16 @@
     padding: 0px 50px;
     
 }
+
+.welcome>h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+.welcome>h1{
+    font-size: 70px;
+    font-weight: 800;
+}
+.welcome>h2{
+    font-size: 25px;
+    font-weight: 600;
+}

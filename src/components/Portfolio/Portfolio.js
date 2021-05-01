@@ -54,11 +54,11 @@ const Portfolio = () => {
                 <div>
                 <div className='portfolio-header'>
                     <div className='container'>
-                    <h2>Web Developer Portfolio</h2>
-                        <p>Just some of the projects I worked on.</p>
+                    <h2 className='h2-headers poppins-font'>Web Developer Portfolio</h2>
+                        <h5 className="poppins-font">Just some of the projects I worked on.</h5>
                     </div>
                     </div>
-                        <div className='portfolio-all container'>
+                        <div className='portfolio-all container '>
                             {
                                 projects.map(project=><SingleProjectCard project={project}></SingleProjectCard>)
                             }
