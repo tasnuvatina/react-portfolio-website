@@ -1,27 +1,74 @@
-
-.home-main{
+.home-main {
+    align-content: center;
     background-color: #f6f5f5;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
 }
 
-.welcome{
-    width: 100%;
+.welcome {
+
     align-self: center;
     padding: 0px 50px;
-    
+
 }
 
-.welcome>h5{
+.welcome>h5 {
     font-size: 20px;
     font-weight: 600;
 }
-.welcome>h1{
+
+.welcome>h1 {
     font-size: 70px;
     font-weight: 800;
 }
-.welcome>h2{
+
+.welcome>h2 {
     font-size: 25px;
     font-weight: 600;
+}
+
+/***************media quiry ****************************/
+@media (max-width: 575.98px) {
+    .home-main {
+        grid-template-columns: 1fr;
+        
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .home-main {
+        grid-template-columns: 1fr;
+        margin: 30px 20px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 865px) {
+    .home-main {
+        grid-template-columns: 1fr;
+        margin: 30px;
+    }
+}
+
+@media (min-width: 864.99px) and (max-width: 991.98px) {
+    .home-main {
+        grid-template-columns: 1fr;
+        margin: 50px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .home-main {
+        grid-template-columns: 1fr;
+        margin: 100px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .home-main {
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+    }
 }
