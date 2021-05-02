@@ -2,12 +2,17 @@ import React from 'react';
 import './Home.css'
 import resume from '../../Data/resume.pdf'
 import { Link } from 'react-router-dom';
+import { motion } from "framer-motion"
 
 const Home = () => {
     return (
         <div className='component-main'>
             <div className='home-main'>
-                    <div className='welcome'>
+                    <motion.div className='welcome'
+                   initial={{x:-200}}
+                    animate={{x:0}}
+                    transition={{type:'spring',damping:30,stiffness:120}}
+                    >
                             <h5 className="poppins-font">Hey there,</h5>
                             <h1 className="poppins-font">I'm <span className='name-span'>Tasnuva</span>,</h1>
                             <h2 className="work-sans-font">Web Developer & Programmer</h2>
@@ -16,7 +21,7 @@ const Home = () => {
                                 <a href={resume} download><button className="work-sans-font button-style mr-4">Resume</button></a>
                                 <Link to ='/contact'><button className="work-sans-font button-style">Contact me</button></Link>
                             </div>
-                    </div>
+                    </motion.div>
                     <div className='welcome'>
                             {/* <h5 className="poppins-font">Hey there,</h5>
                             <h1 className="poppins-font">I'm <span className='name-span'>Tasnuva</span>,</h1>

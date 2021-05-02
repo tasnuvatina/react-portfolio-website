@@ -4,12 +4,16 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons' 
 import { faExternalLinkSquareAlt } from '@fortawesome/free-solid-svg-icons'
-import destinigo from '../../images/destinigo.png'
+import { motion } from "framer-motion"
 
 const SingleProjectCard = (props) => {
     let project=props.project
   return (
-    <div className="single-portfolio-card my-3">
+    <motion.div className="single-portfolio-card my-3"
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{type:'tween',duration:1.5,delay:1.2,ease: "easeInOut",}}
+    >
       <div>
         <img className="portfolio-pic" src={project.pic} alt="" />
       </div>
@@ -38,7 +42,7 @@ const SingleProjectCard = (props) => {
           }
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

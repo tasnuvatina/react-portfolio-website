@@ -6,6 +6,7 @@ import soulnest from '../../images/soulnest.png';
 import destinigo from '../../images/destinigo.png';
 import sanantonio from '../../images/sanantonio.png';
 import grandleagues from '../../images/grandleague.png'
+import { motion } from "framer-motion"
 
 let projects=[
     {
@@ -54,8 +55,18 @@ const Portfolio = () => {
                 <div>
                 <div className='portfolio-header'>
                     <div className='container'>
-                    <h2 className='h2-headers poppins-font'>Web Developer Portfolio</h2>
-                        <h5 className="poppins-font">Just some of the projects I worked on.</h5>
+                    <motion.h2 className='h2-headers poppins-font'
+                    initial={{y:-200}}
+                    animate={{y:0}}
+                    transition={{type:'spring',damping:30,stiffness:120,delay:.5}}
+                    >
+                    Web Developer Portfolio</motion.h2>
+                        <motion.h5 className="poppins-font"
+                        initial={{y:-200}}
+                        animate={{y:0}}
+                        transition={{type:'spring',damping:30,stiffness:120,delay:.9}}
+                        >
+                        Just some of the projects I worked on.</motion.h5>
                     </div>
                     </div>
                         <div className='portfolio-all container '>

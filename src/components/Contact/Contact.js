@@ -1,12 +1,17 @@
 import React from "react";
 import "./Contact.css";
 import SendEmail from "./SendEmail";
+import { motion } from "framer-motion"
 
 const Contact = () => {
   return (
     <div className="component-main">
       <div className="contact-main">
-        <div className="contact-info">
+        <motion.div className="contact-info"
+        initial={{y:200}}
+        animate={{y:0}}
+        transition={{type:'spring',damping:30,stiffness:120}}
+        >
           <h2 className="poppins-font h2-headers">Contact</h2>
           <h3  className="poppins-font">Where to find me</h3>
           <p className="work-sans-font all-p">
@@ -43,10 +48,14 @@ const Contact = () => {
             </li>
           </ul>
           <p className="work-sans-font all-p">You can also use the contact form on this page.</p>
-        </div>
-        <div className="contact-info">
+        </motion.div>
+        <motion.div className="contact-info"
+        initial={{y:-200}}
+        animate={{y:0}}
+        transition={{type:'spring',damping:30,stiffness:120}}
+        >
       <SendEmail></SendEmail>
-      </div>
+      </motion.div>
       </div>
       
     </div>

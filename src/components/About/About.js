@@ -1,10 +1,15 @@
 import React from "react";
 import "./About.css";
+import { motion } from "framer-motion"
 const About = () => {
   return (
     <div className="component-main">
       <div className="about-main">
-        <div className="about-info">
+        <motion.div className="about-info"
+        initial={{x:-200}}
+        animate={{x:0}}
+        transition={{type:'spring',damping:30,stiffness:120}}
+        >
           <h2 className='poppins-font h2-headers'> About <span className='name-span'>Tasnuva Rahman</span> </h2>
           <p className='work-sans-font all-p'>
             I am a 25 years old passionate Fullstack Web Developer based in
@@ -13,8 +18,12 @@ const About = () => {
             years of experience in building beautiful websites, web and mobile
             applications with a stronger focus on the frontend technologies.
           </p>
-        </div>
-        <div className="about-info ">
+        </motion.div>
+        <motion.div className="about-info"
+        initial={{x:200}}
+        animate={{x:0}}
+        transition={{type:'spring',damping:30,stiffness:120}}
+        >
           <div className="my-skills my-4">
             <h3 className="work-sans-font h3-headers">My Skills</h3>
             <div className='skill-span-div work-sans-font'>
@@ -43,7 +52,7 @@ const About = () => {
               <span> <div className='single-skill'><div><img src="https://iconape.com/wp-content/png_logo_vector/cib-mongodb.png" alt="" className="skill-icon mr-1"/> </div><div>MongoDB</div></div></span>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
