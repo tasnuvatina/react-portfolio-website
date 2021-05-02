@@ -18,6 +18,59 @@
   font-weight: 300;
 }
 
+.button-style{
+  padding: 10px 20px;
+  border: 1px solid #ee5796;
+  outline: none;
+  background-color: #00082d;
+  color: #ee5796;
+  font-weight: 500;
+}
+
+.button-style {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.button-style:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ee5796;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.button-style:hover, .button-style:focus, .button-style:active {
+  color: rgb(0, 8, 45);
+}
+.button-style:hover:before, .button-style:focus:before, .button-style:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
 /*****************media quiries**********************/
 @media (max-width: 575.98px) { 
   

@@ -1,8 +1,11 @@
 .about-main{
-    background-color: #276678;
+    background: rgb(0,8,45);
+    background: linear-gradient(141deg, rgba(0,8,45,1) 71%, rgba(191,1,83,1) 100%);
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
+    color: #fff;
+    overflow-y: scroll;
 }
 
 .about-info {
@@ -17,15 +20,66 @@
     height: 25px;
 }
 
-.skill-span-div>span{
-    border: 1px solid red;
+.skill-span-div>span {
+
     display: inline-block;
     align-content: center;
     padding: 3px 5px;
     margin: 5px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0,8,45, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .single-skill{
     display: flex;
     align-items: center;
+}
+
+/***************  media query **********************/
+@media (max-width: 575.98px) {
+    .about-main {
+        grid-template-columns: 1fr;
+        padding: 100px 10px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .about-main {
+        grid-template-columns: 1fr;
+        padding: 100px 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 865px) {
+    .about-main {
+        grid-template-columns: 1fr;
+        padding: 100px 30px;
+    }
+}
+
+@media (min-width: 864.99px) and (max-width: 991.98px) {
+    .about-main {
+        grid-template-columns: 1fr;
+        padding:100px 50px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .about-main {
+        grid-template-columns: 1fr;
+        padding: 100px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .about-main {
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+    }
 }

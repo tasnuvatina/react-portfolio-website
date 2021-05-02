@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../../images/logo.png";
+import logo from "../../images/f3de93b4916d4c4788a7eb8a4a8e75cb (2).png";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,48 +9,53 @@ import {
   faGithub,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   let [isNavOpen, setIsNavOpen] = useState(false);
+  let handleClick=()=>{
+    setIsNavOpen(!isNavOpen)
+  }
   return (
     <div>
     <div className="bars">
-          <button onClick={() => setIsNavOpen(!isNavOpen)}>
-            <FontAwesomeIcon icon={faBars} />
+          <button onClick={handleClick}>
+            {
+              isNavOpen ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />
+            }
           </button>
         </div>
-      <div className="navbar-main" style={{display:"none"}}>
+      <div className="navbar-main" style ={{display : isNavOpen? "flex" : "none" }}>
         
         <div>
-          <div>
-            <NavLink to="/">
-              <img src={logo} alt="" />
+          <div className='nav-img-div'>
+            <NavLink to="/" onClick={handleClick}>
+              <img className='nav-img' src={logo} alt="" />
             </NavLink>
           </div>
           <div>
             <nav className="nav-main nav-width">
               <ul className="nav-ul work-sans-font">
                 <li className="nav-list">
-                  <NavLink className="nav-link" to="/about">
+                  <NavLink className="nav-link" to="/about" onClick={handleClick}>
                     About
                   </NavLink>
                 </li>
                 <li className="nav-list">
-                  <NavLink className="nav-link" to="/portfolio">
+                  <NavLink className="nav-link" to="/portfolio" onClick={handleClick}>
                     Portfolio
                   </NavLink>
                 </li>
                 <li className="nav-list">
-                  <NavLink className="nav-link" to="/blog">
+                  <NavLink className="nav-link" to="/blog" onClick={handleClick}>
                     Blog
                   </NavLink>
                 </li>
                 <li className="nav-list">
-                  <NavLink className="nav-link" to="/contact">
+                  <NavLink className="nav-link" to="/contact" onClick={handleClick}>
                     Contact
                   </NavLink>
                 </li>
-                <li className="nav-list">
+                <li className="nav-list nav-icon-list">
                   <a
                     className="nav-link nav-icon"
                     href="https://github.com/tasnuvatina"

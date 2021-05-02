@@ -1,7 +1,9 @@
 .home-main {
     align-content: center;
-    background-color: #f6f5f5;
+    background: rgb(0,8,45);
+background: linear-gradient(141deg, rgba(0,8,45,1) 71%, rgba(0,51,101,1) 100%);
     display: grid;
+    color:#fff;
 }
 
 .welcome {
@@ -9,6 +11,10 @@
     align-self: center;
     padding: 0px 50px;
 
+}
+
+.name-span{
+    color: #bf0153;
 }
 
 .welcome>h5 {
@@ -30,7 +36,7 @@
 @media (max-width: 575.98px) {
     .home-main {
         grid-template-columns: 1fr;
-        
+        padding: 100px 10px;
     }
 }
 
@@ -38,7 +44,7 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
     .home-main {
         grid-template-columns: 1fr;
-        margin: 30px 20px;
+        padding: 100px 20px;
     }
 }
 
@@ -46,14 +52,14 @@
 @media (min-width: 768px) and (max-width: 865px) {
     .home-main {
         grid-template-columns: 1fr;
-        margin: 30px;
+        padding: 100px 30px;
     }
 }
 
 @media (min-width: 864.99px) and (max-width: 991.98px) {
     .home-main {
         grid-template-columns: 1fr;
-        margin: 50px;
+        padding:100px 50px;
     }
 }
 
@@ -61,7 +67,7 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .home-main {
         grid-template-columns: 1fr;
-        margin: 100px;
+        padding: 100px;
     }
 }
 

@@ -1,22 +1,84 @@
 .portfolio-main{
-    background-color: #f6f5f5;
+    background: rgb(0,8,45);
+    background: linear-gradient(90deg, rgba(0,8,45,1) 0%, rgba(0,51,101,1) 68%, rgba(245,141,195,1) 100%);
     display: grid;
     height: 100vh;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 /********************* portfolio header ***************/
 .portfolio-header{
-    background-color: #1687a7;
-    height: 150px;
-    padding-top: 30px;
+    height: 200px;
+    padding-top: 50px;
     color: #f6f5f5;
+    text-align: center;
 }
 /****************port folio all ************************/
 .portfolio-all{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    margin-top: 30px;
+    margin-top: 30px; */
 }
 
+/***************  media query **********************/
+@media (max-width: 575.98px) {
+    .portfolio-all{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 30px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .portfolio-all{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 865px) {
+    .portfolio-all{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 864.99px) and (max-width: 991.98px) {
+    .portfolio-all{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 30px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .portfolio-all{
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin-top: 30px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1299.99px) {
+
+    .portfolio-all{
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin-top: 30px;
+    }
+}
+
+
+
+@media (min-width: 1300px) {
+    .portfolio-all{
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        margin-top: 30px;
+    }
+}

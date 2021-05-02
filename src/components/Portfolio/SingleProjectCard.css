@@ -1,14 +1,16 @@
 /*********** single postfolio card ***********************/
 
-.single-portfolio-card{
-    background-color: #276678;
-    border-radius: 15px;
-    padding:15px 15px 0px 15px;
+.single-portfolio-card {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0,8,45, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 15px 15px 0px 15px;
     width: 350px;
     margin-bottom: 30px;
 }
 .portfolio-pic{
-    border-radius: 15px;
     width: 100%;
     height: 260.469px;
 }
@@ -28,4 +30,11 @@
 }
 .portfolio-link{
     color: #f6f5f5;
+}
+.portfolio-link:hover{
+    color: #f58dc3;
+}
+
+.small-p{
+    font-size: 13px
 }

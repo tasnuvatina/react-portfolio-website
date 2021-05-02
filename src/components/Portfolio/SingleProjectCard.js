@@ -9,13 +9,13 @@ import destinigo from '../../images/destinigo.png'
 const SingleProjectCard = (props) => {
     let project=props.project
   return (
-    <div className="single-portfolio-card">
+    <div className="single-portfolio-card my-3">
       <div>
         <img className="portfolio-pic" src={project.pic} alt="" />
       </div>
       <div className="project-info">
         <h4 className="poppins-font">{project.name}</h4>
-        <p className="work-sans-font all-p">
+        <p className="work-sans-font all-p small-p">
           {project.description}
         </p>
         <p className="portfolio-links-para">

@@ -1,8 +1,11 @@
 .contact-main {
-    background-color: #f6f5f5;
+    background: rgb(191,1,83);
+    background: radial-gradient(circle, rgba(191,1,83,1) 0%, rgba(0,8,45,1) 84%);
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
+    color:#fff;
+    overflow-y: scroll;
 }
 
 .contact-info {
@@ -15,4 +18,66 @@
 .sendmail-main{
     align-self: center;
     padding: 0px 30px 0px 50px;
+}
+
+
+/***************  media query **********************/
+@media (max-width: 575.98px) {
+    .contact-main {
+        grid-template-columns: 1fr;
+        padding: 100px 10px;
+    }
+    .contact-info {
+        margin-bottom: 50px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .contact-main {
+        grid-template-columns: 1fr;
+        padding: 100px 20px;
+    }
+    .contact-info {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 865px) {
+    .contact-main {
+        grid-template-columns: 1fr;
+        padding: 100px 30px;
+    }
+    .contact-info {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 864.99px) and (max-width: 991.98px) {
+    .contact-main {
+        grid-template-columns: 1fr;
+        padding:100px 50px;
+    }
+    .contact-info {
+        margin-bottom: 50px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .contact-main {
+        grid-template-columns: 1fr;
+        padding: 100px;
+    }
+    .contact-info {
+        margin-bottom: 50px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .contact-main {
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+    }
 }
