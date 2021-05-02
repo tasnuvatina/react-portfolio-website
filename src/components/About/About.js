@@ -10,7 +10,35 @@ const About = () => {
         animate={{x:0}}
         transition={{type:'spring',damping:30,stiffness:120}}
         >
-          <h2 className='poppins-font h2-headers'> About <span className='name-span'>Tasnuva Rahman</span> </h2>
+          <h2 className='poppins-font h2-headers'> 
+          <div style={{display:'inline-block'}} className='mr-3'>
+          <motion.div
+           whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}>A</motion.div><motion.div
+           whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}>b</motion.div><motion.div
+           whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}>o</motion.div><motion.div
+           whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}>u</motion.div><motion.div
+           whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}>t</motion.div>
+          </div>
+           <span className='name-span'> 
+           <div style={{display:'inline-block'}}>
+           <motion.div
+          whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}> T</motion.div><motion.div
+          whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}>a</motion.div><motion.div
+          whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}>s</motion.div><motion.div
+          whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}>n</motion.div><motion.div
+          whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}>u</motion.div><motion.div
+          whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}>v</motion.div><motion.div
+          whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}>a</motion.div> 
+           </div>
+          <div style={{display:'inline-block'}}>
+          <motion.div
+          whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}>R</motion.div><motion.div
+          whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}>a</motion.div><motion.div
+          whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}>h</motion.div><motion.div
+          whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}>m</motion.div><motion.div
+          whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}>a</motion.div><motion.div
+          whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}>n</motion.div>
+          </div></span> </h2>
           <p className='work-sans-font all-p'>
             I am a 25 years old passionate Fullstack Web Developer based in
             Stockholm, Sweden (originally from Serbia) who enjoys building

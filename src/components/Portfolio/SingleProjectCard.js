@@ -24,18 +24,18 @@ const SingleProjectCard = (props) => {
         </p>
         <p className="portfolio-links-para">
           <span className="portfolio-link-span">
-            <a href={project.clientGithubLink} className="portfolio-link">
+            <a href={project.clientGithubLink} className="portfolio-link" target="_blank" rel="norefferer" >
               <FontAwesomeIcon icon={faGithub} />
             </a>{" "}
           </span>
           <span className="portfolio-link-span">
-            <a href={project.liveLInk} className="portfolio-link">
+            <a href={project.liveLInk} className="portfolio-link" target="_blank" rel="norefferer">
               <FontAwesomeIcon icon={faExternalLinkSquareAlt} />
             </a>
           </span>
           {
               project.serverGithubLink  && <span className="portfolio-link-span">
-            <a href={project.serverGithubLink} className="portfolio-link">
+            <a href={project.serverGithubLink} className="portfolio-link" target="_blank" rel="norefferer">
               <FontAwesomeIcon icon={faGithub} />
             </a>{" "}
           </span>
