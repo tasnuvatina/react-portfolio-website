@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 const SingleProjectCard = (props) => {
     let project=props.project
   return (
-    <motion.div className="single-portfolio-card my-3"
+    <motion.div className="single-portfolio-card my-3" style={{display:'inline-block'}}
     initial={{opacity:0}}
     animate={{opacity:1}}
     transition={{type:'tween',duration:1.5,delay:1.2,ease: "easeInOut",}}

@@ -40,10 +40,9 @@ const About = () => {
           whileHover={{scale:.7}} transition={{type:'spring',damping:3,stiffness:100}} style={{display:'inline-block'}}>n</motion.div>
           </div></span> </h2>
           <p className='work-sans-font all-p'>
-            I am a 25 years old passionate Fullstack Web Developer based in
-            Stockholm, Sweden (originally from Serbia) who enjoys building
-            software. Very positive and highly motivated person with over 7
-            years of experience in building beautiful websites, web and mobile
+            I am a Fullstack Web Developer based in
+            Khulna,Bangladesh who enjoys building
+            software. Very positive and highly motivated person with experience in building beautiful websites, web and mobile
             applications with a stronger focus on the frontend technologies.
           </p>
         </motion.div>

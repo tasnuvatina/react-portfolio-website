@@ -12,14 +12,14 @@ let projects=[
     {
         pic: styledora,
         name:"StyleDora E-commerce",
-        description:"A full stack ecommerce website with custom API,built with Reactjs, React Router,Firebase,Nodejs,MongoDB.",
+        description:"A full stack ecommerce website with custom API,built with Reactjs, React Router,Firebase,Nodejs,MongoDB,here customers can order see various products.if he is logged in he can order t-shirts,review those orders ,delete any order and see new deals.Admins can add new products and manage then.",
         clientGithubLink:"https://github.com/tasnuvatina/styleDora-ecommerce-website-client",
         liveLInk:"https://full-stack-client.web.app/",
         serverGithubLink:"https://github.com/tasnuvatina/styleDora-ecommerce-website-server"
     },{
         pic: soulnest,
         name:"Soulnest Photography",
-        description:"Complete(MERN) photography company website ecommerce website with custom API,built with Reactjs,Stripejs, React Router,Firebase,Nodejs,MongoDB.",
+        description:"Complete(MERN) photography company website ecommerce website with custom API,built with Reactjs,Stripejs,React Router,Firebase,Nodejs,MongoDB.Here customers can book his events with credit card payment,can see his bookings and give reviews.Admin has restricted access,he can add and manage services,change customer booking status and make new admin",
         clientGithubLink:"https://github.com/tasnuvatina/soulNest-photography-website-client",
         liveLInk:"https://soulnest-wedding-photography.web.app/",
         serverGithubLink:"https://github.com/tasnuvatina/soulNest-photography-website-server"
@@ -27,21 +27,21 @@ let projects=[
     {
         pic: destinigo,
         name:"DestiniGo Transportation",
-        description:"A full stack ecommerce website with custom API,built with Reactjs, React Router,Firebase,Nodejs,MongoDB. ",
+        description:"A react transportation website,built with Reactjs, React Router,Firebase authentication system.Here,user can choose from various vehicles,if he is logged in he will be directed to destination page where he can book his tranport and compare prices.He can also see his path on google map. ",
         clientGithubLink:"https://github.com/tasnuvatina/destiniGo-tranportation-website",
         liveLInk:"https://react-auth-6f7ad.web.app/"
     },
     {
         pic: grandleagues,
         name:"Grand Leagues",
-        description:"A full stack ecommerce website with custom API,built with Reactjs, React Router,Firebase,Nodejs,MongoDB.",
+        description:"A react website where user can see all the famous leagues and explore detail information about them.He can also see the latest league events and picture gallary.",
         clientGithubLink:"https://github.com/tasnuvatina/grand-leagues-website-react",
         liveLInk:"https://react-router-tasnuvatina.netlify.app/"
     },
     {
         pic: sanantonio,
         name:"San Antonio F.C.",
-        description:"A full stack ecommerce website with custom API,built with Reactjs, React Router,Firebase,Nodejs,MongoDB.",
+        description:"This is a Football club page which is made with react.Specific number of players profiles are on that page from where user can choose players to form a team.And also can see his selected team members and required budget to hire them.This page is fully responsive.",
         clientGithubLink:"https://github.com/tasnuvatina/san-antonio-football-club",
         liveLInk:"https://simple-react-tasnuvatina.netlify.app/"
     }
