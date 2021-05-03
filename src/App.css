@@ -18,16 +18,16 @@
   font-weight: 300;
 }
 
-.button-style{
+
+.button-style {
   padding: 10px 20px;
   border: 1px solid #ee5796;
   outline: none;
-  background-color: #00082d;
+  background-color: #00082d77;
   color: #ee5796;
   font-weight: 500;
-}
+  outline: none;
 
-.button-style {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -64,10 +64,12 @@
 }
 .button-style:hover, .button-style:focus, .button-style:active {
   color: rgb(0, 8, 45);
+  outline: none;
 }
 .button-style:hover:before, .button-style:focus:before, .button-style:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+  outline: none;
 }
 
 

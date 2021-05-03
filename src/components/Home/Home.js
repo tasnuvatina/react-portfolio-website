@@ -52,8 +52,12 @@ const Home = () => {
                                 <a href={resume} download><button className="work-sans-font">Resume</button></a>
                                 <Link to ='/contact'><button className="work-sans-font">Contact me</button></Link>
                             </div> */}
+                            
                     </div>
-                    <div className='home-animation'></div>
+                    <div className='home-animation' >
+                    
+                 
+                    </div>
             </div>
         </div>
     );

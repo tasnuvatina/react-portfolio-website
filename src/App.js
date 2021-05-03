@@ -12,6 +12,7 @@ import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
 import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
+import Resume from './components/Resume/Resume';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
       </Route>
       <Route path='/contact'>
         <Contact></Contact>
+      </Route>
+      <Route path='/resume'>
+        <Resume></Resume>
       </Route>
       <Route exact path='/'>
           <Home></Home>

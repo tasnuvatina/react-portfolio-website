@@ -1,0 +1,88 @@
+.resume-main{
+    background: rgb(0,51,101);
+background: radial-gradient(circle, rgba(0,51,101,1) 0%, rgba(0,8,45,1) 84%);
+    display: grid;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.resume-link{
+    color: #fff;
+    text-decoration: none;
+}
+.resume-link:hover {
+    color: #f58dc3;
+}
+
+.resume-icon{
+    padding: 8px 15px;
+    font-size: 25px;
+}
+.projet-link-a{
+    color: #ee5796;
+    font-size: 16px;
+}
+.projet-link-a:hover{
+    text-decoration: none;
+    color: #00082d;
+}
+
+.tech-skill-section{
+    display: grid;
+   
+    
+}
+
+.projet-link-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+/***************  media query **********************/
+@media (max-width: 575.98px) {
+    .tech-skill-section{
+        grid-template-columns: 1fr;
+       }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .tech-skill-section{
+        grid-template-columns: 1fr;
+       }
+}
+
+@media (min-width: 768px) and (max-width: 865px) {
+    .tech-skill-section{
+        grid-template-columns: 1fr;
+       }
+}
+
+@media (min-width: 864.99px) and (max-width: 991.98px) {
+    .tech-skill-section{
+        grid-template-columns: 1fr;
+       }
+    
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .tech-skill-section{
+        grid-template-columns: 1fr 1fr;
+       }
+    
+}
+@media (min-width: 1200px) and (max-width: 1299.99px) {
+
+    .tech-skill-section{
+        grid-template-columns: 1fr 1fr;
+       }
+}
+
+
+
+@media (min-width: 1300px) {
+   .tech-skill-section{
+    grid-template-columns: 1fr 1fr;
+   }
+}
