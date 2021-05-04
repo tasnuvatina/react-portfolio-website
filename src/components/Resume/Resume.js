@@ -25,7 +25,7 @@ const Resume = () => {
   return (
     <div>
       <div className="component-main">
-        <div className="resume-main">
+        <div className="resume-main pb-4">
           <div>
             <div className="portfolio-header">
               <div className="container">
@@ -92,7 +92,16 @@ const Resume = () => {
                   </a>
                 </motion.h5>
                 {/* summery section */}
-                <p className="work-sans-font text-left mt-4">
+                <motion.p className="work-sans-font text-left mt-4"
+                initial={{ x: -1200 }}
+                  animate={{ x: 0 }}
+                  transition={{
+                    type: "spring",
+                    damping: 30,
+                    stiffness: 120,
+                    delay: 1.5,
+                  }}
+                >
                   Web Developer with skills to build and maintain Front-end
                   systems. Proficient in{" "}
                   <strong>
@@ -100,10 +109,19 @@ const Resume = () => {
                     MongoDB
                   </strong>
                   . Passionate about new technologies and problem solving
-                </p>
+                </motion.p>
 
                 {/* technical skills section */}
-                <div>
+                <motion.div
+                initial={{ x: 1200 }}
+                  animate={{ x: 0 }}
+                  transition={{
+                    type: "spring",
+                    damping: 30,
+                    stiffness: 120,
+                    delay: 1.5,
+                  }}
+                >
                   <h4 className="work-sans-font text-left mt-4">
                     <FontAwesomeIcon icon={faCode} className="name-span mr-2" />
                     TECHNICAL SKILLS
@@ -131,18 +149,35 @@ const Resume = () => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </motion.div>
                 {/* project section */}
                 <div>
-                  <h4 className="work-sans-font text-left mt-4">
+                  <motion.h4 className="work-sans-font text-left mt-4"
+                  initial={{ x: -1200 }}
+                  animate={{ x: 0 }}
+                  transition={{
+                    type: "spring",
+                    damping: 30,
+                    stiffness: 120,
+                    delay: 1.7,
+                  }}
+                  >
                     <FontAwesomeIcon
                       icon={faProjectDiagram}
                       className="name-span mr-2"
                     />
                     PERSONAL PROJECTS
-                  </h4>
+                  </motion.h4>
                   <div className="personal-projects-section">
-                    <div className="work-sans-font text-left mt-4">
+                    <motion.div className="work-sans-font text-left mt-4"
+                    initial={{ x: 1200 }}
+                  animate={{ x: 0 }}
+                  transition={{
+                    type: "spring",
+                    damping: 30,
+                    stiffness: 120,
+                    delay: 1.9,
+                  }}>
                       <h5>
                         {" "}
                         <strong>
@@ -208,8 +243,17 @@ const Resume = () => {
                           </a>
                         </div>
                       </div>
-                    </div>
-                    <div className="work-sans-font text-left mt-4">
+                    </motion.div>
+                    <motion.div className="work-sans-font text-left mt-4"
+                    initial={{ x: -1200 }}
+                  animate={{ x: 0 }}
+                  transition={{
+                    type: "spring",
+                    damping: 30,
+                    stiffness: 120,
+                    delay: 2.1,
+                  }}
+                    >
                       <h5>
                         <strong>
                           <FontAwesomeIcon
@@ -275,8 +319,17 @@ const Resume = () => {
                         </div>
                       </div>
                       </p>
-                    </div>
-                    <div className="work-sans-font text-left mt-4">
+                    </motion.div>
+                    <motion.div className="work-sans-font text-left mt-4"
+                    initial={{ x: 1200 }}
+                  animate={{ x: 0 }}
+                  transition={{
+                    type: "spring",
+                    damping: 30,
+                    stiffness: 120,
+                    delay: 2.3,
+                  }}
+                    >
                       <h5>
                         <strong>
                           <FontAwesomeIcon
@@ -327,8 +380,17 @@ const Resume = () => {
                        
                       </div>
                       </p>
-                    </div>
-                    <div className="work-sans-font text-left mt-4">
+                    </motion.div>
+                    <motion.div className="work-sans-font text-left mt-4"
+                    initial={{ x: -1200 }}
+                  animate={{ x: 0 }}
+                  transition={{
+                    type: "spring",
+                    damping: 30,
+                    stiffness: 120,
+                    delay: 2.5,
+                  }}
+                    >
                       <h5>
                         {" "}
                         <strong>
@@ -370,8 +432,17 @@ const Resume = () => {
                         
                       </div>
                       </p>
-                    </div>
-                    <div className="work-sans-font text-left mt-4">
+                    </motion.div>
+                    <motion.div className="work-sans-font text-left mt-4"
+                    initial={{ x: 1200 }}
+                  animate={{ x: 0 }}
+                  transition={{
+                    type: "spring",
+                    damping: 30,
+                    stiffness: 120,
+                    delay: 2.7,
+                  }}
+                    >
                       <h5>
                         <strong>
                           <FontAwesomeIcon
@@ -412,10 +483,19 @@ const Resume = () => {
                         
                       </div>
                       </p>
-                    </div>
+                    </motion.div>
 
                     {/* education section */}
-                    <div>
+                    <motion.div
+                     initial={{ x: -1200 }}
+                  animate={{ x: 0 }}
+                  transition={{
+                    type: "spring",
+                    damping: 30,
+                    stiffness: 120,
+                    delay: 2.9,
+                  }}
+                    >
                       <h4 className="work-sans-font text-left mt-4">
                         <FontAwesomeIcon
                           icon={faGraduationCap}
@@ -427,9 +507,18 @@ const Resume = () => {
                         <h5>B.Sc. in Computer Science and Engineering</h5>
                         <p>Graduated with CGPA 3.65</p>
                       </div>
-                    </div>
+                    </motion.div>
                     {/* certification section */}
-                    <div className="">
+                    <motion.div className=""
+                    initial={{ x: 1200 }}
+                  animate={{ x: 0 }}
+                  transition={{
+                    type: "spring",
+                    damping: 30,
+                    stiffness: 120,
+                    delay: 3.1,
+                  }}
+                    >
                       <h4 className="work-sans-font text-left mt-4">
                         <FontAwesomeIcon
                           icon={faCertificate}
@@ -437,22 +526,17 @@ const Resume = () => {
                         />
                         CERTIFICATION
                       </h4>
-                      <div className="work-sans-font text-left mt-4">
+                      <div className="work-sans-font text-left mt-4 padding-bottom">
                         <h5>
                           Complete Web Development Course with Jhankar Mahbub
                         </h5>
                         <h5>Responsive Web Design by freeCodeCamp</h5>
                       </div>
-                    </div>
+                    </motion.div>
                   </div>
                 </div>
               </div>
             </div>
-            {/* <div className='portfolio-all container '>
-                            {
-                                projects.map(project=><SingleProjectCard project={project}></SingleProjectCard>)
-                            }
-                        </div> */}
           </div>
         </div>
       </div>

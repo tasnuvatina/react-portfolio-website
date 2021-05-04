@@ -68,7 +68,7 @@ const About = () => {
               <span><div className='single-skill'><div><img src="https://cdn.worldvectorlogo.com/logos/adobe-illustrator-cc.svg" alt="" className="skill-icon mr-1"/></div><div>Illustrator</div></div></span>
             </div>
           </div>
-          <div className="interested my-4">
+          <div className="interested my-4 ">
             <h3 className="work-sans-font h3-headers">Interested to work with</h3>
             <div className='skill-span-div work-sans-font'>
             <span> <div className='single-skill'><div><img className='skill-icon mr-1' src="https://iconape.com/wp-content/files/rj/371212/svg/371212.svg" alt=""/> </div><div>Javascript</div></div></span>

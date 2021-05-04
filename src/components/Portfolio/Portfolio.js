@@ -69,7 +69,7 @@ const Portfolio = () => {
                         Just some of the projects I worked on.</motion.h5>
                     </div>
                     </div>
-                        <div className='portfolio-all container '>
+                        <div className='portfolio-all container padding-bottom '>
                             {
                                 projects.map(project=><SingleProjectCard project={project}></SingleProjectCard>)
                             }

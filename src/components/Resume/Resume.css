@@ -4,6 +4,7 @@ background: radial-gradient(circle, rgba(0,51,101,1) 0%, rgba(0,8,45,1) 84%);
     display: grid;
     height: 100vh;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .resume-link{
@@ -36,6 +37,9 @@ background: radial-gradient(circle, rgba(0,51,101,1) 0%, rgba(0,8,45,1) 84%);
 .projet-link-buttons{
     display: flex;
     justify-content: center;
+}
+.padding-bottom{
+    padding-bottom: 50px;
 }
 
 /***************  media query **********************/

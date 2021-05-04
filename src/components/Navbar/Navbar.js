@@ -50,11 +50,11 @@ const Navbar = () => {
                     Resume
                   </NavLink>
                 </li>
-                <li className="nav-list">
+                {/* <li className="nav-list">
                   <NavLink className="nav-link" to="/blog" onClick={handleClick}>
                     Blog
                   </NavLink>
-                </li>
+                </li> */}
                 <li className="nav-list">
                   <NavLink className="nav-link" to="/contact" onClick={handleClick}>
                     Contact
